@@ -1,0 +1,68 @@
+body {
+    background-color: beige;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(white, red);
+    text-align: center;
+    font-size: 50px;
+    padding: 0;
+    padding-top: 15px;
+    color: gold;
+    text-shadow: 3px 3px green;
+    border-radius: 20px;
+}
+
+
+.rank {
+    width: 80%;
+    text-align: center;
+    background-color: aqua;
+    margin: 10%;
+}
+
+
+.buttons, .current, .possible {
+    text-align: center;
+}
+
+.buttons ul, .current ul, .possible ul {
+    display: inline-block;
+    padding: 0;
+}
+
+.buttons li, .current li, .possible li {
+    list-style: none;
+    float: left;
+    padding: 3px;
+}
+
+.current li, .possible li {
+    padding-left: 23px;
+    padding-right: 23px;
+    font-size: 25px;        
+}
+
+ul li a {
+    display: block;
+    min-height: 20px;
+    padding: 14px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    width: 80px;
+    border-radius: 15px;
+}
+
+ul li a:hover {
+    background-color: black;
+}
+
+.combos {
+    text-align: center;
+    margin: auto; 
+}

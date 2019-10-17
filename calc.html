@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+        <title>FIFA ranking</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>  
+        <div class="footer">
+            <style>
+                @media only screen and (max-width: 650px) {
+                    .footer {
+                        height: 140px;
+                            }
+                        }
+                @media only screen and (max-width: 360px) {
+                    .footer {
+                        height: 190px;
+                            }
+                        }
+            </style>
+            FIFA Ranking Calculator
+        </div>
+        <br>  
+        <div class="buttons">
+            <ul>
+                <li><a href="index.html">Rank</a></li>
+                <li><a href="calc.html">Calc</a></li>
+            </ul>
+        </div>
+        <br>  
+        <div class="combos">
+            <select id="combo-home" onchange="home_select()">
+                <option selected disabled hidden style="display: none" value=""></option>
+                <option value="BEL">Belgium</option>
+                <option value="FRA">France</option>
+                <option value="ENG">England</option>
+                <option value="POR">Portugal</option>
+                <option value="SPA">Spain</option>
+                <option value="CRO">Croatia</option>
+            </select>
+            <select id="combo-away" onchange="away_select()"> 
+                <option selected disabled hidden style="display: none" value=""></option>       
+                <option value="BEL">Belgium</option>
+                <option value="FRA">France</option>
+                <option value="ENG">England</option>
+                <option value="POR">Portugal</option>
+                <option value="SPA">Spain</option>
+                <option value="CRO">Croatia</option>
+            </select>
+        </div>
+        <div class="current">
+            <ul>
+                <li id="home_pts">????</li>
+                <li id="away_pts">????</li>
+            </ul>        
+        </div>
+        <div class="possible">
+            <ul>
+                <li>????</li>
+                <li>????</li>
+            </ul>        
+        </div>
+        
+        <div class="buttons">
+            <ul>
+                <li><a href="#win">Home</a></li>
+                <li><a href="#draw">Draw</a></li>
+                <li><a href="#lose">Visitor</a></li>
+            </ul>
+        </div>
+            
+        
+    <script type="text/javascript" src="calc.js">
+    </script>
+    </body>
+</html>
